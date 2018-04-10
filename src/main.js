@@ -7,6 +7,9 @@ import router from './router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
+
+import echarts from 'echarts'
+Vue.prototype.$echarts = echarts 
 //注册自己的全局组件
 import HeadTop from "./components/HeadTop";
 Vue.component(HeadTop.name, HeadTop);
